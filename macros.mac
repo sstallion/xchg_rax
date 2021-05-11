@@ -1,0 +1,9 @@
+%ifndef MACROS_MAC
+%define MACROS_MAC
+
+; Mach-O requires global symbols have an underscore prefix:
+%ifidn __?OUTPUT_FORMAT?__, macho64
+%define main	_main
+%endif
+
+%endif
