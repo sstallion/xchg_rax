@@ -1,0 +1,5 @@
+Breakpoint 1 at 0x400509
+
+Breakpoint 1, 0x0000000000400509 in main ()
+eax 0	rbx 0	rcx 0	rdx 0
+esi 0	edi 0	rbp 0

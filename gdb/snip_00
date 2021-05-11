@@ -1,0 +1,5 @@
+file snip_00
+break *main+25
+run
+printf "eax %d\trbx %d\trcx %d\trdx %d\n", $eax, $rbx, $rcx, $rdx
+printf "esi %d\tedi %d\trbp %d\n", $esi, $edi, $rbp
