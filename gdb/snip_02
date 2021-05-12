@@ -1,0 +1,11 @@
+file snip_02
+break *main+9
+break  main
+run
+set $rax = ~0
+continue
+print $rax
+run
+set $rax =  0
+continue
+print $rax
