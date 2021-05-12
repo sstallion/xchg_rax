@@ -1,0 +1,10 @@
+file snip_01
+break *main+6
+tbreak main
+run
+set $rax =  0
+set $rdx =  1
+set $rcx = 10
+dprintf main, "rax %2d\trdx %2d\trcx %d\n", $rax, $rdx, $rcx
+printf "rax %2d\trdx %2d\trcx %d\n", $rax, $rdx, $rcx
+continue
