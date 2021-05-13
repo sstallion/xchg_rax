@@ -1,0 +1,12 @@
+Breakpoint 1 at 0x4004fc
+Breakpoint 2 at 0x4004f0
+
+Breakpoint 2, 0x00000000004004f0 in main ()
+
+Breakpoint 1, 0x00000000004004fc in main ()
+$1 = 0
+
+Breakpoint 2, 0x00000000004004f0 in main ()
+
+Breakpoint 1, 0x00000000004004fc in main ()
+$2 = 0
