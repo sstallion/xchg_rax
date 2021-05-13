@@ -1,7 +1,8 @@
-Temporary breakpoint 1 at 0x4004f0
+Breakpoint 1 at 0x4004f6
+Temporary breakpoint 2 at 0x4004f0
 
-Temporary breakpoint 1, 0x00000000004004f0 in main ()
-Dprintf 2 at 0x4004f0
+Temporary breakpoint 2, 0x00000000004004f0 in main ()
+Dprintf 3 at 0x4004f0
 rax  0	rdx  1	rcx 10
 rax  1	rdx  0	rcx 9
 rax  1	rdx  1	rcx 8
@@ -12,3 +13,5 @@ rax  8	rdx  5	rcx 4
 rax 13	rdx  8	rcx 3
 rax 21	rdx 13	rcx 2
 rax 34	rdx 21	rcx 1
+
+Breakpoint 1, 0x00000000004004f6 in main ()
