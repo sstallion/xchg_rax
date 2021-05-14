@@ -1,0 +1,14 @@
+file snip_04
+disassemble main
+break *main+2
+break  main
+run
+set $al = 'x'
+printf "Toggle case of $al = '%c'\n", $al
+continue
+print/c $al
+run
+set $al = 'X'
+printf "Toggle case of $al = '%c'\n", $al
+continue
+print/c $al
