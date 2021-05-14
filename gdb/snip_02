@@ -1,11 +1,14 @@
 file snip_02
+disassemble main
 break *main+9
 break  main
 run
-set $rax = ~0
+set $rax =  0
+printf "Boolean conversion of $rax = %u:\n", $rax
 continue
 print $rax
 run
-set $rax =  0
+set $rax = ~0
+printf "Boolean conversion of $rax = %u:\n", $rax
 continue
 print $rax

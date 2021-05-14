@@ -1,5 +1,6 @@
 file snip_00
+disassemble main
 break *main+25
 run
-printf "eax %d\trbx %d\trcx %d\trdx %d\n", $eax, $rbx, $rcx, $rdx
-printf "esi %d\tedi %d\trbp %d\n", $esi, $edi, $rbp
+printf "$eax = %u\t$rbx = %u\t$rcx = %u\t$rdx = %u\n", $eax, $rbx, $rcx, $rdx
+printf "$esi = %u\t$edi = %u\t$rbp = %u\n", $esi, $edi, $rbp
