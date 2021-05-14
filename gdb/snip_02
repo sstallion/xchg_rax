@@ -2,13 +2,12 @@ file snip_02
 disassemble main
 break *main+9
 break  main
-run
-set $rax =  0
-printf "Boolean conversion of $rax = %u:\n", $rax
-continue
-print $rax
-run
-set $rax = ~0
-printf "Boolean conversion of $rax = %u:\n", $rax
-continue
-print $rax
+define run-snip
+  run
+  set $rax = $arg0
+  printf "Boolean conversion $rax = %u:\n", $rax
+  continue
+  print/u $rax
+end
+run-snip ~0
+run-snip  0

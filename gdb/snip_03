@@ -2,15 +2,13 @@ file snip_03
 disassemble main
 break *main+12
 break  main
-run
-set $rax = ~0
-set $rdx =  0
-printf "Minimum of $rax = %u and $rdx = %u:\n", $rax, $rdx
-continue
-print/u $rax
-run
-set $rax =  0
-set $rdx = ~0
-printf "Minimum of $rax = %u and $rdx = %u:\n", $rax, $rdx
-continue
-print/u $rax
+define run-snip
+  run
+  set $rax = $arg0
+  set $rdx = $arg1
+  printf "Minimum $rax = %u, $rdx = %u:\n", $rax, $rdx
+  continue
+  print/u $rax
+end
+run-snip ~0  0
+run-snip  0 ~0

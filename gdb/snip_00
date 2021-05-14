@@ -1,6 +1,12 @@
 file snip_00
 disassemble main
 break *main+25
-run
-printf "$eax = %u\t$rbx = %u\t$rcx = %u\t$rdx = %u\n", $eax, $rbx, $rcx, $rdx
-printf "$esi = %u\t$edi = %u\t$rbp = %u\n", $esi, $edi, $rbp
+break  main
+define run-snip
+  run
+  set $rcx = $arg0
+  continue
+  printf "$eax = %u\t$rbx = %u\t$rcx = %u\t$rdx = %u\n", $eax, $rbx, $rcx, $rdx
+  printf "$esi = %u\t$edi = %u\t$rbp = %u\n", $esi, $edi, $rbp
+end
+run-snip 0x40

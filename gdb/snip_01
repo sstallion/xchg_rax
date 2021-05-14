@@ -1,11 +1,15 @@
 file snip_01
 disassemble main
 break *main+6
-tbreak main
-run
-set $rax =  0
-set $rdx =  1
-set $rcx = 10
-dprintf main, "$rax = %u\t$rdx = %u\t$rcx = %u\n", $rax, $rdx, $rcx
-printf "$rax = %u\t$rdx = %u\t$rcx = %u\n", $rax, $rdx, $rcx
-continue
+define run-snip
+  tbreak main
+  run
+  set $rax = $arg0
+  set $rdx = $arg1
+  set $rcx = $arg2
+  set $format = "\"$rax = %u\t$rdx = %u\t$rcx = %u\n\""
+  eval "dprintf main, %s, $rax, $rdx, $rcx", $format
+  eval "printf %s, $rax, $rdx, $rcx", $format
+  continue
+end
+run-snip 0 1 10

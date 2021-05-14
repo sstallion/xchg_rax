@@ -7,7 +7,8 @@
 ; back to 0 indicating a "false" value.
 ;
 ; This is exceptionally clever and the first time I've seen SBB used this way.
-; I like that this uses a single register and does not require a branch.
+; I really like that this uses a single register and does not require a
+; branch.
 
 %include "macros.mac"
 
