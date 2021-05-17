@@ -1,0 +1,16 @@
+file snip_05
+disassemble main
+break *main+8
+break  main
+define run-snip
+  run
+  set $rax = $arg0
+  printf "EFLAGS for $rax = %u:\n", $rax
+  continue
+  print $eflags
+end
+set $val = 10
+while $val > 0
+  run-snip $val
+  set $val = $val - 1
+end
