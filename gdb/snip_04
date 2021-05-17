@@ -5,7 +5,7 @@ break  main
 define run-snip
   run
   set $al = $arg0
-  printf "Toggle case $al = '%c':\n", $al
+  printf "Toggle case if $al = '%c':\n", $al
   continue
   print/c $al
 end

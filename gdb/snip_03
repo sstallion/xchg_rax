@@ -6,7 +6,7 @@ define run-snip
   run
   set $rax = $arg0
   set $rdx = $arg1
-  printf "Minimum $rax = %u, $rdx = %u:\n", $rax, $rdx
+  printf "Minimum if $rax = %u, $rdx = %u:\n", $rax, $rdx
   continue
   print/u $rax
 end

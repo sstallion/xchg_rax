@@ -1,21 +1,21 @@
 Dump of assembler code for function main:
-   0x0000000000401110 <+0>:	xor    %eax,%eax
-   0x0000000000401112 <+2>:	lea    0x0,%rbx
-   0x000000000040111a <+10>:	loop   0x40111a <main+10>
-   0x000000000040111c <+12>:	mov    $0x0,%edx
-   0x0000000000401121 <+17>:	and    $0x0,%esi
-   0x0000000000401124 <+20>:	sub    %edi,%edi
-   0x0000000000401126 <+22>:	pushq  $0x0
-   0x0000000000401128 <+24>:	pop    %rbp
-   0x0000000000401129 <+25>:	mov    $0x0,%eax
-   0x000000000040112e <+30>:	retq   
-   0x000000000040112f <+31>:	nop
+   0x00000000004004f0 <+0>:	xor    %eax,%eax
+   0x00000000004004f2 <+2>:	lea    0x0,%rbx
+   0x00000000004004fa <+10>:	loop   0x4004fa <main+10>
+   0x00000000004004fc <+12>:	mov    $0x0,%edx
+   0x0000000000400501 <+17>:	and    $0x0,%esi
+   0x0000000000400504 <+20>:	sub    %edi,%edi
+   0x0000000000400506 <+22>:	pushq  $0x0
+   0x0000000000400508 <+24>:	pop    %rbp
+   0x0000000000400509 <+25>:	mov    $0x0,%eax
+   0x000000000040050e <+30>:	retq   
+   0x000000000040050f <+31>:	nop
 End of assembler dump.
-Breakpoint 1 at 0x401129
-Breakpoint 2 at 0x401110
+Breakpoint 1 at 0x400509
+Breakpoint 2 at 0x4004f0
 
-Breakpoint 2, 0x0000000000401110 in main ()
+Breakpoint 2, 0x00000000004004f0 in main ()
 
-Breakpoint 1, 0x0000000000401129 in main ()
+Breakpoint 1, 0x0000000000400509 in main ()
 $eax = 0	$rbx = 0	$rcx = 0	$rdx = 0
 $esi = 0	$edi = 0	$rbp = 0

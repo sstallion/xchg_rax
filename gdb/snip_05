@@ -5,7 +5,7 @@ break  main
 define run-snip
   run
   set $rax = $arg0
-  printf "EFLAGS for $rax = %u:\n", $rax
+  printf "EFLAGS if $rax = %u:\n", $rax
   continue
   print $eflags
 end

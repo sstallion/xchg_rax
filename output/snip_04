@@ -1,20 +1,20 @@
 Dump of assembler code for function main:
-   0x0000000000401110 <+0>:	xor    $0x20,%al
-   0x0000000000401112 <+2>:	mov    $0x0,%eax
-   0x0000000000401117 <+7>:	retq   
-   0x0000000000401118 <+8>:	nopl   0x0(%rax,%rax,1)
+   0x00000000004004f0 <+0>:	xor    $0x20,%al
+   0x00000000004004f2 <+2>:	mov    $0x0,%eax
+   0x00000000004004f7 <+7>:	retq   
+   0x00000000004004f8 <+8>:	nopl   0x0(%rax,%rax,1)
 End of assembler dump.
-Breakpoint 1 at 0x401112
-Breakpoint 2 at 0x401110
+Breakpoint 1 at 0x4004f2
+Breakpoint 2 at 0x4004f0
 
-Breakpoint 2, 0x0000000000401110 in main ()
-Toggle case $al = 'x':
+Breakpoint 2, 0x00000000004004f0 in main ()
+Toggle case if $al = 'x':
 
-Breakpoint 1, 0x0000000000401112 in main ()
+Breakpoint 1, 0x00000000004004f2 in main ()
 $1 = 88 'X'
 
-Breakpoint 2, 0x0000000000401110 in main ()
-Toggle case $al = 'X':
+Breakpoint 2, 0x00000000004004f0 in main ()
+Toggle case if $al = 'X':
 
-Breakpoint 1, 0x0000000000401112 in main ()
+Breakpoint 1, 0x00000000004004f2 in main ()
 $2 = 120 'x'

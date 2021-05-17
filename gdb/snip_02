@@ -5,7 +5,7 @@ break  main
 define run-snip
   run
   set $rax = $arg0
-  printf "Boolean conversion $rax = %u:\n", $rax
+  printf "Boolean conversion if $rax = %u:\n", $rax
   continue
   print/u $rax
 end
