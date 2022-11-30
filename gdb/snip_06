@@ -1,0 +1,16 @@
+file snip_06
+disassemble main
+break *main+9
+break  main
+define run-snip
+  run
+  set $rax = $arg0
+  printf "TODO if $rax = %x:\n", $rax
+  continue
+  print/x $rax
+end
+run-snip 0
+run-snip 1
+run-snip 2
+run-snip 3
+run-snip 4
